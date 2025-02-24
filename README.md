@@ -8,25 +8,26 @@ movie = input("Enter movie you want to watch: ")
 
 
 if movie in movies_in_theater:
+
     print(f"Movie '{movie}' is available.")
 else:
-    print(f"Movie '{movie}' is not available.")
+     print(f"Movie '{movie}' is not available.")
 
 
 ticket_price = int(input("Enter Ticket Price: "))
 
 if ticket_price > 200:
-    print("Get ticket to watch movie")
+     print("Get ticket to watch movie")
 else:
-    print("Cannot provide ticket")
+     print("Cannot provide ticket")
 
 
 rating = float(input("Enter movie rating: "))
 
 if rating >= 8.0 or rating >= 6.5:
-    print("Movie is good")
+     print("Movie is good")
 else:
-    print("Movie is below average")
+     print("Movie is below average")
 
 
 if "Dear Comrade" in movies_in_theater:
