@@ -1,1 +1,35 @@
-print("hi")
+print("Welcome to MBA/MCA Counseling System")
+
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+course = input("Enter preferred course (MBA/MCA): ").strip().upper()
+
+
+if course == "MBA" or course == "MCA":
+    score = float(input(f"Enter your {course} entrance exam score (out of 100): "))
+
+    
+    if score >= 50:
+        print(f"Congratulations {name}, you are eligible for {course} admission.")
+
+        
+      if score >= 80:
+            print(f"Based on your score, you can apply to top {course} colleges:")
+            if course == "MBA":
+                print("- IIM Bangalore\n- IIM Ahmedabad\n- ISB Hyderabad")
+            else:
+                print("- NIT Trichy\n- JNU Delhi\n- VIT")
+        elif score >= 60:
+            print(f"Based on your score, you can apply to mid-tier {course} colleges:")
+            if course == "MBA":
+                print("- Symbiosis\n- NMIMS\n- IMT Ghaziabad")
+            else:
+                print("- Amity University\n- Christ University\n- SRM")
+        else:
+            print(f"Based on your score, you can apply to local {course} colleges.")
+
+    else:
+        print(f"Sorry {name}, your score is below the eligibility criteria for {course}.")
+else:
+    print("Invalid course selection! Please enter either MBA or MCA.")
