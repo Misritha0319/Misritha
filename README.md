@@ -19,6 +19,7 @@ ticket_price = int(input("Enter Ticket Price: "))
 if ticket_price > 200:
      print("Get ticket to watch movie")
 else:
+
      print("Cannot provide ticket")
 
 
