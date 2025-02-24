@@ -1,4 +1,4 @@
-movies_in_theater = {
+iimovies_in_theater = {
     "Dear Comrade": {"show-time": "9:00AM"},
     "Lucky Bhaskar": {"show-time": "12:00PM"},
     "Orange": {"show-time": "3:00PM"}
@@ -11,7 +11,7 @@ if movie in movies_in_theater:
 
     print(f"Movie '{movie}' is available.")
 else:
-     print(f"Movie '{movie}' is not available.")
+      print(f"Movie '{movie}' is not available.")
 
 
 ticket_price = int(input("Enter Ticket Price: "))
@@ -32,9 +32,9 @@ else:
 
 
 if "Dear Comrade" in movies_in_theater:
-    print("Yes")
+     print("Yes")
 else:
-    print("No")
+     print("No")
 
 
 if movies_in_theater.get("Dear Comrade", {}).get("show-time") == "9:00AM":
@@ -46,12 +46,13 @@ else:
 movie_genre = input("Enter movie genre (Family Entertainment or Horror): ").strip().lower()
 
 if movie_genre == "family entertainment":
-    print("Watch with family")
+      print("Watch with family")
 elif movie_genre == "horror":
-    print("Don't watch with children")
+      print("Don't watch with children")
 else:
-    print("Invalid genre entered")
+      print("Invalid genre entered")
 
 
 overall_rating = input("Give me overall rating to movie: ")
-print(f"The overall rating given is: {overall_rating}")
+
+   print(f"The overall rating given is: {overall_rating}")
