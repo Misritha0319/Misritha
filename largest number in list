@@ -1,0 +1,5 @@
+numbers=[23,43,56,1,2]
+largest=numbers[0]
+if num>largest:
+ largest=num
+print("largest numbers is:",largest)
